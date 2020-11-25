@@ -10,7 +10,7 @@ public class DrivingForklift : MonoBehaviour
     void Update () {
 
         float transSpeed = Input.GetAxis("Oculus_CrossPlatform_PrimaryThumbstickVertical");
-        transform.Translate(Vector3.forward * (transSpeed/2) * Time.deltaTime );
+        transform.Translate(Vector3.forward * (1.5f * transSpeed) * Time.deltaTime );
 
     }
 
